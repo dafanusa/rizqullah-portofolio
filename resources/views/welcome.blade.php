@@ -86,40 +86,25 @@
 
   /* Section reveal */
   .section-reveal {
-    opacity: 0;
-    transform: translateY(26px) scale(0.97);
-    filter: blur(6px);
-    transition: opacity 720ms cubic-bezier(0.22, 1, 0.36, 1),
-                transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
-                filter 720ms cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: opacity, transform, filter;
+    opacity: 1;
+    transition: none;
+    will-change: auto;
   }
   .section-reveal.is-visible {
     opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
   }
   .section-reveal.is-exit {
-    opacity: 0;
-    transform: translateY(14px) scale(0.985);
-    filter: blur(4px);
+    opacity: 1;
   }
   .section-reveal > * {
-    opacity: 0;
-    transform: translateY(12px);
-    filter: blur(2px);
-    transition: opacity 520ms ease, transform 620ms ease, filter 620ms ease;
-    transition-delay: var(--reveal-delay, 0ms);
+    opacity: 1;
+    transition: none;
   }
   .section-reveal.is-visible > * {
     opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
   }
   .section-reveal.is-exit > * {
-    opacity: 0;
-    transform: translateY(8px);
-    filter: blur(2px);
+    opacity: 1;
     transition-delay: 0ms;
   }
 
@@ -481,13 +466,13 @@
             </div>
 
             <header class="site-header fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/60 shadow-sm shadow-black/40 backdrop-blur">
-                <nav class="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-4 px-4 py-4 sm:px-6 md:grid-cols-[1fr_auto_1fr]">
+                <nav class="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-4 px-6 py-4 sm:px-6 md:grid-cols-[1fr_auto_1fr]">
                     <div class="hidden items-center gap-8 text-sm font-semibold text-slate-200 md:flex">
                         <a class="nav-link relative text-slate-200 transition hover:text-white" href="#home">Home</a>
                         <a class="nav-link relative text-slate-200 transition hover:text-white" href="#about">About</a>
                     </div>
                     <div class="flex w-full min-w-0 items-center justify-between md:justify-center md:gap-8">
-                        <div class="flex min-w-0 flex-col items-start gap-1 md:items-center md:text-center">
+                        <div class="flex flex-col items-start gap-1 md:items-center md:text-center">
                             <a href="#home" class="brand flex min-w-0 items-center gap-3 text-lg font-semibold tracking-tight text-white md:justify-center">
                                 <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-amber-300 shadow-lg shadow-amber-500/20">R</span>
                                 <span class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-200">Rizqullah Dafa Nusa</span>
@@ -1124,7 +1109,7 @@
                     </div>
                     <div class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-4 text-xs text-slate-500 md:flex-row">
                         <p>2026 Rizqullah Portofolio. All rights reserved.</p>
-                        <p class="text-slate-400">Crafted with care in Malang.</p>
+                        <p class="text-slate-400">Portofolio Development in Malang.</p>
                     </div>
                 </div>
             </footer>
@@ -1232,10 +1217,6 @@
                     entries.forEach((entry) => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('is-visible');
-                            entry.target.classList.remove('is-exit');
-                        } else {
-                            entry.target.classList.remove('is-visible');
-                            entry.target.classList.add('is-exit');
                         }
                     });
                 }, { threshold: 0.22 });
