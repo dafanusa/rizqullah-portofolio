@@ -75,6 +75,9 @@ const setupFilters = () => {
 };
 
 const setupCertificates = () => {
+    if (globalThis.__CERTS_INLINE__ === true) {
+        return;
+    }
     const modal = document.getElementById("certificateModal");
     const modalImage = document.getElementById("certificateImage");
     const modalPdf = document.getElementById("certificatePdf");

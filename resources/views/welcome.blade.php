@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth overflow-x-hidden">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=bebas-neue:400|manrope:400,500,600,700|playfair-display:500,600,700" rel="stylesheet" />
 
+        <script>
+            window.__CERTS_INLINE__ = true;
+        </script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     
         <style>
@@ -203,6 +206,16 @@
     word-break: keep-all;
     font-family: "Playfair Display", ui-serif, Georgia, serif;
   }
+  @media (max-width: 767px) {
+    .about-title {
+      text-align: center;
+    }
+    .about-title .name {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
   .social-btn{
     display: inline-flex;
     align-items: center;
@@ -351,9 +364,9 @@
 
 /* mobile nav single row + button feel */
 .mobile-menu{
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 10px;
-  overflow: hidden;
+  overflow: visible;
 }
 .mobile-link{
   color: #e2e8f0;
@@ -428,7 +441,7 @@
 
 
     </head>
-    <body class="bg-[#0b0f16] text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-900 font-['Manrope',_ui-sans-serif,_system-ui,_sans-serif] overflow-hidden">
+    <body class="bg-[#0b0f16] text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-900 font-['Manrope',_ui-sans-serif,_system-ui,_sans-serif] overflow-x-hidden">
         <div id="loadingScreen" class="fixed inset-0 z-[999] flex items-center justify-center overflow-hidden bg-[#0b0f16] transition-opacity duration-700">
             <div class="pointer-events-none absolute inset-0">
                 <div class="absolute -left-24 top-10 h-80 w-80 rounded-full bg-amber-500/20 blur-3xl"></div>
@@ -468,18 +481,18 @@
             </div>
 
             <header class="site-header fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/60 shadow-sm shadow-black/40 backdrop-blur">
-                <nav class="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-4 px-6 py-4 md:grid-cols-[1fr_auto_1fr]">
+                <nav class="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-4 px-4 py-4 sm:px-6 md:grid-cols-[1fr_auto_1fr]">
                     <div class="hidden items-center gap-8 text-sm font-semibold text-slate-200 md:flex">
                         <a class="nav-link relative text-slate-200 transition hover:text-white" href="#home">Home</a>
                         <a class="nav-link relative text-slate-200 transition hover:text-white" href="#about">About</a>
                     </div>
-                    <div class="flex w-full items-center justify-between md:justify-center md:gap-8">
-                        <div class="flex flex-col items-start gap-1 md:items-center">
-                            <a href="#home" class="brand flex items-center gap-3 text-lg font-semibold tracking-tight text-white">
+                    <div class="flex w-full min-w-0 items-center justify-between md:justify-center md:gap-8">
+                        <div class="flex min-w-0 flex-col items-start gap-1 md:items-center">
+                            <a href="#home" class="brand flex min-w-0 items-center gap-3 text-lg font-semibold tracking-tight text-white">
                                 <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-amber-300 shadow-lg shadow-amber-500/20">R</span>
-                                <span class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-200">Rizqullah Dafa Nusa</span>
+                                <span class="block min-w-0 text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 sm:text-sm sm:tracking-[0.2em] max-w-[16ch] leading-tight">Rizqullah Dafa Nusa</span>
                             </a>
-                            <span class="brand-sub text-[10px] font-semibold uppercase tracking-[0.3em] text-amber-200">Let's see the awesome experience</span>
+                            <span class="brand-sub block min-w-0 text-[9px] font-semibold uppercase tracking-[0.22em] text-amber-200 sm:text-[10px] sm:tracking-[0.3em] max-w-[24ch] leading-tight">Let's see the awesome experience</span>
                         </div>
                         <button id="mobileMenuToggle" class="mobile-toggle inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 p-2 text-amber-200 transition md:hidden" type="button" aria-expanded="false" aria-controls="mobileMenu">
                             <span class="sr-only">Open menu</span>
@@ -548,7 +561,7 @@
                 </div>
             </header>
 
-            <main class="mx-auto flex w-full max-w-6xl flex-col gap-20 px-6 pb-24 pt-32 md:pt-36">
+            <main class="mx-auto flex w-full max-w-6xl flex-col gap-20 px-4 pb-24 pt-32 sm:px-6 md:pt-36">
                 <section id="home" class="grid items-center gap-10 rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-950/90 to-black px-6 py-10 shadow-2xl shadow-black/60 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:py-14">
                     <div class="space-y-6 text-center md:text-left">
                         <p class="hero-badge inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em]">
@@ -615,9 +628,9 @@
                         <p class="text-2xl font-semibold uppercase tracking-[0.3em] text-amber-300 sm:text-4xl md:text-5xl">About Me</p>
                         <p class="text-sm font-semibold text-slate-300 md:text-base">Kenali saya lebih dekat dan perjalanan saya.</p>
                     </div>
-                    <div class="grid w-full items-center gap-10 md:grid-cols-[0.9fr_1.1fr] md:text-left">
+                    <div class="grid w-full items-center gap-10 md:grid-cols-[0.9fr_1.1fr] md:text-left text-center md:justify-items-stretch justify-items-center">
                         <div class="relative flex justify-center md:justify-start">
-                            <button type="button" class="group reveal-on-scroll relative h-72 w-72 rounded-full focus:outline-none sm:h-80 sm:w-80 md:h-[420px] md:w-[420px] lg:h-[480px] lg:w-[480px]" aria-label="Foto tentang saya">
+                            <button type="button" class="group reveal-on-scroll relative h-64 w-64 rounded-full focus:outline-none sm:h-80 sm:w-80 md:h-[420px] md:w-[420px] lg:h-[480px] lg:w-[480px]" aria-label="Foto tentang saya">
                                 <span class="pointer-events-none absolute -inset-6 rounded-full bg-gradient-to-tr from-amber-500/10 via-transparent to-amber-300/15 blur-2xl transition duration-300 group-hover:opacity-100"></span>
                                 <span class="pointer-events-none absolute inset-0 rounded-full border border-white/15 transition duration-300 group-hover:border-amber-300/60"></span>
                                 <span class="pointer-events-none absolute inset-0 rounded-full transition duration-300 group-hover:shadow-[0_0_50px_rgba(251,191,36,0.25)] group-active:shadow-[0_0_70px_rgba(251,191,36,0.45)]"></span>
@@ -628,8 +641,8 @@
                                 <img class="absolute inset-0 h-full w-full rounded-full object-cover object-center shadow-2xl shadow-black/40 transition duration-300 group-hover:scale-[1.01] group-active:scale-[0.99]" src="{{ asset('assets/about/aboutme.jpg') }}" alt="Foto tentang saya" loading="lazy" decoding="async" />
                             </button>
                         </div>
-                        <div class="space-y-4">
-                            <h2 class="about-title text-xl font-semibold text-white sm:text-4xl md:text-5xl font-['Playfair_Display',_ui-serif,_Georgia,_serif]">
+                        <div class="space-y-4 text-center md:text-left">
+                            <h2 class="about-title text-xl font-semibold text-white sm:text-4xl md:text-5xl font-['Playfair_Display',_ui-serif,_Georgia,_serif] text-center md:text-left">
                                 <span class="intro">HELLO, I'M</span>
                                 <span class="name">RIZQULLAH ATSIR<br>DAFA CHILDYASA NUSA</span>
                             </h2>
@@ -803,7 +816,7 @@
 
                         <div data-tab-panel="certificates" class="hidden space-y-6">
                             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-portfolio-grid="certificates">
-                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Ethical Hacking Essentials (EHE)" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Ethical Hacking.png') }}">
+                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Ethical Hacking Essentials (EHE)" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Ethical Hacking.png') }}" data-cert-file="Sertifikat Ethical Hacking.png">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">EC-Council</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jun 2023</div>
@@ -811,7 +824,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Ethical Hacking Essentials (EHE)</p>
                                 </button>
-                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Leadership" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Leadership.jpg') }}">
+                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Leadership" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Leadership.jpg') }}" data-cert-file="Sertifikat Leadership.jpg">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">YEF2023</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Dec 2023</div>
@@ -819,7 +832,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Leadership</p>
                                 </button>
-                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Komputer" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Komputer.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Komputer.pdf') }}">
+                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Komputer" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Komputer.png') }}" data-cert-file="Sertifikat Komputer.png" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Komputer.pdf') }}" data-cert-pdf-file="Sertifikat Komputer.pdf">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">LCTC STIE JB Mimika</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jun 2023</div>
@@ -827,7 +840,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Komputer</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Data Visualization" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Data Visualization.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Data Visualization.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Data Visualization" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Data Visualization.png') }}" data-cert-file="Sertifikat Data Visualization.png" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Data Visualization.pdf') }}" data-cert-pdf-file="Sertifikat Data Visualization.pdf">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">MySkill</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jun 2023</div>
@@ -835,7 +848,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Data Visualization</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Cisco Networking" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Cisco.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Cisco.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Cisco Networking" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Cisco.png') }}" data-cert-file="Sertifikat Cisco.png" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Cisco.pdf') }}" data-cert-pdf-file="Sertifikat Cisco.pdf">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">CCNA</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Feb 2025</div>
@@ -843,7 +856,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Cisco Networking</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Senat Taruna" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Senat Taruna.png') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Senat Taruna" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Senat Taruna.png') }}" data-cert-file="Sertifikat Senat Taruna.png">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">SMAT Wira Bhakti</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Dec 2022</div>
@@ -851,7 +864,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Senat Taruna</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Public Speaking" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Public Speaking.jpg') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Public Speaking" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Public Speaking.jpg') }}" data-cert-file="Sertifikat Public Speaking.jpg">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">YEF2023</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Dec 2023</div>
@@ -859,7 +872,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Public Speaking</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Speak Up 2" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Speak Up 2.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Speak Up 2.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Speak Up 2" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Speak Up 2.png') }}" data-cert-file="Sertifikat Speak Up 2.png" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Speak Up 2.pdf') }}" data-cert-pdf-file="Sertifikat Speak Up 2.pdf">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">Mr BOb Course</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Feb 2024</div>
@@ -867,7 +880,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Speak Up 2</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Tahfizh" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Tahfizh.jpg') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Tahfizh" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Tahfizh.jpg') }}" data-cert-file="Sertifikat Tahfizh.jpg">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">Daarul Qur'an</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Okt 2020</div>
@@ -875,7 +888,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Tahfizh</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat TicTalk Class" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat TicTalk Class.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat TicTalk Class.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat TicTalk Class" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat TicTalk Class.png') }}" data-cert-file="Sertifikat TicTalk Class.png" data-cert-pdf="{{ asset('assets/certificate/Sertifikat TicTalk Class.pdf') }}" data-cert-pdf-file="Sertifikat TicTalk Class.pdf">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">Mr BOb Course</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jan 2024</div>
@@ -883,7 +896,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat TicTalk Class</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Young Entrepreneur Summit" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Young Entrepreneur Summit.jpg') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Young Entrepreneur Summit" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Young Entrepreneur Summit.jpg') }}" data-cert-file="Sertifikat Young Entrepreneur Summit.jpg">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">YEF2024</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jan 2024</div>
@@ -1092,7 +1105,7 @@
             </main>
 
             <footer class="border-t border-white/10 bg-gradient-to-b from-black/60 via-slate-950/80 to-black">
-                <div class="mx-auto w-full max-w-6xl px-6 py-10">
+                <div class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
                     <div class="grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
                         <div class="space-y-3">
                             <p class="text-lg font-semibold text-white">Rizqullah Atsir Dafa Childyasa Nusa</p>
@@ -1414,27 +1427,25 @@
             const certPdf = document.getElementById('certificatePdf');
             const certDownload = document.getElementById('certificateDownload');
             const certClose = document.getElementById('certificateClose');
+            const certBase = "{{ asset('assets/certificate') }}";
 
             const getCertExtension = (src) => {
                 if (!src) return 'jpg';
-                const cleanSrc = src.split('?')[0].toLowerCase();
+                let cleanSrc = src.split('?')[0];
+                try {
+                    cleanSrc = decodeURIComponent(cleanSrc);
+                } catch (error) {
+                    cleanSrc = cleanSrc;
+                }
+                cleanSrc = cleanSrc.toLowerCase();
                 const parts = cleanSrc.split('.');
                 return parts.length > 1 ? parts[parts.length - 1] : 'jpg';
             };
 
-            const normalizeAssetUrl = (src) => {
-                if (!src) return src;
-                try {
-                    return new URL(src, window.location.href).toString();
-                } catch (error) {
-                    return src;
-                }
-            };
-
             const updateCertificatePreview = (previewSrc, fileSrc, title) => {
                 if (!certModal || !certDownload || !certImage || !certPdf) return;
-                const previewUrl = normalizeAssetUrl(previewSrc);
-                const fileUrl = normalizeAssetUrl(fileSrc || previewSrc);
+                const previewUrl = (previewSrc || '').trim();
+                const fileUrl = (fileSrc || previewSrc || '').trim();
                 const previewExt = getCertExtension(previewUrl);
                 const fileExt = getCertExtension(fileUrl || previewUrl);
                 const isPdfPreview = previewExt === 'pdf';
@@ -1505,8 +1516,10 @@
 
             document.querySelectorAll('[data-cert-src]').forEach((card) => {
                 card.addEventListener('click', () => {
-                    const src = card.getAttribute('data-cert-src');
-                    const fileSrc = card.getAttribute('data-cert-pdf') || src;
+                    const fileName = card.getAttribute('data-cert-file');
+                    const pdfName = card.getAttribute('data-cert-pdf-file');
+                    const src = fileName ? `${certBase}/${fileName}` : card.getAttribute('data-cert-src');
+                    const fileSrc = pdfName ? `${certBase}/${pdfName}` : (card.getAttribute('data-cert-pdf') || src);
                     const previewSrc = card.getAttribute('data-cert-preview') || src;
                     const title = card.getAttribute('data-cert-title') || 'Certificate';
                     updateCertificatePreview(previewSrc, fileSrc, title);
