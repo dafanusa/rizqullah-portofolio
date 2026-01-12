@@ -487,12 +487,12 @@
                         <a class="nav-link relative text-slate-200 transition hover:text-white" href="#about">About</a>
                     </div>
                     <div class="flex w-full min-w-0 items-center justify-between md:justify-center md:gap-8">
-                        <div class="flex min-w-0 flex-col items-start gap-1 md:items-center">
-                            <a href="#home" class="brand flex min-w-0 items-center gap-3 text-lg font-semibold tracking-tight text-white">
+                        <div class="flex min-w-0 flex-col items-start gap-1 md:items-center md:text-center">
+                            <a href="#home" class="brand flex min-w-0 items-center gap-3 text-lg font-semibold tracking-tight text-white md:justify-center">
                                 <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-amber-300 shadow-lg shadow-amber-500/20">R</span>
-                                <span class="block min-w-0 text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 sm:text-sm sm:tracking-[0.2em] max-w-[16ch] leading-tight">Rizqullah Dafa Nusa</span>
+                                <span class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-200">Rizqullah Dafa Nusa</span>
                             </a>
-                            <span class="brand-sub block min-w-0 text-[9px] font-semibold uppercase tracking-[0.22em] text-amber-200 sm:text-[10px] sm:tracking-[0.3em] max-w-[24ch] leading-tight">Let's see the awesome experience</span>
+                            <span class="brand-sub text-[10px] font-semibold uppercase tracking-[0.3em] text-amber-200">Let's see the awesome experience</span>
                         </div>
                         <button id="mobileMenuToggle" class="mobile-toggle inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 p-2 text-amber-200 transition md:hidden" type="button" aria-expanded="false" aria-controls="mobileMenu">
                             <span class="sr-only">Open menu</span>
