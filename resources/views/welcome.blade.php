@@ -638,12 +638,12 @@
                             </p>
                             <div class="grid w-full gap-4 sm:grid-cols-2">
                                 <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-4 shadow-lg shadow-black/40 transition hover:-translate-y-1 hover:shadow-xl">
-                                    <p class="text-sm font-semibold text-white">1+ Tahun</p>
-                                    <p class="text-xs text-slate-400">Pengalaman membangun UI</p>
+                                    <p class="text-sm font-semibold text-white">3+ Tahun</p>
+                                    <p class="text-xs text-slate-400">Pengalaman di bidang IT</p>
                                 </div>
                                 <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-4 shadow-lg shadow-black/40 transition hover:-translate-y-1 hover:shadow-xl">
-                                    <p class="text-sm font-semibold text-white">10+ Proyek</p>
-                                    <p class="text-xs text-slate-400">Web dan design</p>
+                                    <p class="text-sm font-semibold text-white">10+ Project</p>
+                                    <p class="text-xs text-slate-400">Project kuliah & personal</p>
                                 </div>
                             </div>
                         </div>
@@ -693,49 +693,49 @@
                                 </div>
                             </div>
                             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                                <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Website UMKM Modern" data-detail-desc="Landing page dengan CTA jelas, layout bersih, dan animasi masuk halus." data-detail-image="{{ asset('assets/projects/mvbtummaplikasi.png') }}" data-detail-link="https://drive.google.com/drive/folders/1bDY2UAT5Pe3dOaeTAqu5e2a697DPNeTm?usp=drive_link" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Aplikasi MVBT Activity Manager" data-detail-desc="Landing page dengan CTA jelas, layout bersih, dan animasi masuk halus." data-detail-image="{{ asset('assets/projects/mvbtummaplikasi.png') }}" data-detail-link="https://drive.google.com/drive/folders/1bDY2UAT5Pe3dOaeTAqu5e2a697DPNeTm?usp=drive_link" data-detail-link-label="Lihat Project" role="button" tabindex="0">
                                     <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/projects/mvbtummaplikasi.png') }}" alt="Project website" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Website UMKM Modern</h3>
-                                        <p class="text-sm text-slate-300">Landing page dengan CTA jelas, layout bersih, dan animasi masuk halus.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Aplikasi MVBT Activity Manager</h3>
+                                        <p class="text-sm text-slate-300">Aplikasi mobile untuk mengelola aktivitas dan agenda secara terstruktur. Dilengkapi landing page dengan CTA yang jelas, layout bersih, serta animasi transisi yang halus untuk pengalaman pengguna yang nyaman.</p>
                                     </div>
                                 </article>
-                                <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Kunjungi Website" role="button" tabindex="0">
-                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
+                                <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Website Nusantara Restaurant" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/projects/Nusantara Restaurant.png') }}" data-detail-link="#" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/projects/Nusantara Restaurant.png') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
-                                        <p class="text-sm text-slate-300">Section highlight, timeline, dan showcase project yang rapi.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Website Nusantara Restaurant</h3>
+                                        <p class="text-sm text-slate-300">Website restoran khas nusantara dengan tampilan visual makanan yang menggugah selera. Menyajikan informasi menu, highlight section, timeline konten, serta showcase project yang tertata rapi dan mudah dinavigasi.</p>
                                     </div>
                                 </article>
-                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Kunjungi Website" role="button" tabindex="0">
-                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
+                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Aplikasi PortalNusaAkademi" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/projects/Portal Nusa Akademi.png') }}" data-detail-link="https://portalnusaakademi-web.web.app" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/projects/Portal Nusa Akademi.png') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
-                                        <p class="text-sm text-slate-300">Section highlight, timeline, dan showcase project yang rapi.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Aplikasi PortalNusaAkademi</h3>
+                                        <p class="text-sm text-slate-300">Aplikasi edukasi berbasis mobile untuk manajemen pembelajaran dan informasi akademik. Memiliki struktur konten yang jelas, highlight fitur utama, timeline rapi, dan UI yang modern.</p>
                                     </div>
                                 </article>
-                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Kunjungi Website" role="button" tabindex="0">
-                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
+                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Website Cita Rasa Samawa" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/projects/Cita Rasa Samawa.png') }}" data-detail-link="#" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/projects/Cita Rasa Samawa.png') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
-                                        <p class="text-sm text-slate-300">Section highlight, timeline, dan showcase project yang rapi.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Website Cita Rasa Samawa</h3>
+                                        <p class="text-sm text-slate-300">Website kuliner daerah sumbawa yang menampilkan identitas brand lokal dengan kuat. Fokus pada visual makanan, informasi produk, serta showcase konten yang tertata rapi dan responsif di berbagai perangkat.</p>
                                     </div>
                                 </article>
-                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Kunjungi Website" role="button" tabindex="0">
-                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
+                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Video Showcase MVBT Actvity Manager" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/projects/Video MVBT.png') }}" data-detail-link="https://drive.google.com/file/d/1KTiBf0zDKq_sBx4pebiPstU6-OlFxY7e/view?usp=sharing" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/projects/Video MVBT.png') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
-                                        <p class="text-sm text-slate-300">Section highlight, timeline, dan showcase project yang rapi.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Video Showcase MVBT Activity</h3>
+                                        <p class="text-sm text-slate-300">Video presentasi aplikasi MVBT Activity Manager yang menampilkan alur penggunaan, fitur utama, dan tampilan UI secara singkat, jelas, dan menarik untuk kebutuhan promosi atau presentasi.</p>
                                     </div>
                                 </article>
-                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Kunjungi Website" role="button" tabindex="0">
-                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
+                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Website Portofolio Rizqullah" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/projects/Website Portofolio.png') }}" data-detail-link="#" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/projects/Website Portofolio.png') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
-                                        <p class="text-sm text-slate-300">Section highlight, timeline, dan showcase project yang rapi.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Website Portofolio Rizqullah</h3>
+                                        <p class="text-sm text-slate-300">Website portofolio personal dengan desain modern dan profesional. Menampilkan profil, keahlian, dan project showcase secara terstruktur untuk memperkuat personal branding.</p>
                                     </div>
                                 </article>
-                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Kunjungi Website" role="button" tabindex="0">
+                                    <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Lihat Project" role="button" tabindex="0">
                                     <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
                                         <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
@@ -819,7 +819,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Leadership</p>
                                 </button>
-                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Komputer" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Komputer.png') }}" data-cert-pdf="{{ url('/download/certificate/Sertifikat Komputer.pdf') }}">
+                                <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Komputer" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Komputer.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Komputer.pdf') }}">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">LCTC STIE JB Mimika</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jun 2023</div>
@@ -827,7 +827,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Komputer</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Data Visualization" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Data Visualization.png') }}" data-cert-pdf="{{ url('/download/certificate/Sertifikat Data Visualization.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Data Visualization" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Data Visualization.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Data Visualization.pdf') }}">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">MySkill</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jun 2023</div>
@@ -835,7 +835,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Data Visualization</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Cisco Networking" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Cisco.png') }}" data-cert-pdf="{{ url('/download/certificate/Sertifikat Cisco.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Cisco Networking" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Cisco.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Cisco.pdf') }}">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">CCNA</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Feb 2025</div>
@@ -859,7 +859,7 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Public Speaking</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Speak Up 2" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Speak Up 2.png') }}" data-cert-pdf="{{ url('/download/certificate/Sertifikat Speak Up 2.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat Speak Up 2" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat Speak Up 2.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat Speak Up 2.pdf') }}">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">Mr BOb Course</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Feb 2024</div>
@@ -875,11 +875,11 @@
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat Tahfizh</p>
                                 </button>
-                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat TicTalk Class" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat TicTalk Class.png') }}" data-cert-pdf="{{ url('/download/certificate/Sertifikat TicTalk Class.pdf') }}">
+                                    <button class="grid gap-3 rounded-3xl border border-white/10 bg-slate-900/70 p-4 text-left shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-cert-title="Sertifikat TicTalk Class" data-portfolio-item="certificates" data-cert-src="{{ asset('assets/certificate/Sertifikat TicTalk Class.png') }}" data-cert-pdf="{{ asset('assets/certificate/Sertifikat TicTalk Class.pdf') }}">
                                     <div class="relative overflow-hidden rounded-2xl border border-white/5 bg-slate-950/40">
                                         <div class="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center rounded-full border border-amber-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-100 shadow-lg shadow-black/40">Mr BOb Course</div>
                                         <div class="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center rounded-full border border-emerald-200/70 bg-slate-950/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100 shadow-lg shadow-black/40">Jan 2024</div>
-                                        <img class="relative z-0 h-52 w-full object-cover transition duration-500 hover:scale-[1.02] sm:h-60" src="{{ asset('assets/certificate/Sertifikat Speak Up 2.png') }}" alt="Sertifikat TicTalk Class" loading="lazy" decoding="async" />
+                                        <img class="relative z-0 h-52 w-full object-cover transition duration-500 hover:scale-[1.02] sm:h-60" src="{{ asset('assets/certificate/Sertifikat TicTalk Class.png') }}" alt="Sertifikat TicTalk Class" loading="lazy" decoding="async" />
                                     </div>
                                     <p class="text-sm font-semibold text-white">Sertifikat TicTalk Class</p>
                                 </button>
@@ -1425,13 +1425,9 @@
             const normalizeAssetUrl = (src) => {
                 if (!src) return src;
                 try {
-                    const url = new URL(src, window.location.origin);
-                    if (url.origin !== window.location.origin) {
-                        return encodeURI(`${window.location.origin}${url.pathname}`);
-                    }
-                    return encodeURI(url.toString());
+                    return new URL(src, window.location.href).toString();
                 } catch (error) {
-                    return encodeURI(src);
+                    return src;
                 }
             };
 
