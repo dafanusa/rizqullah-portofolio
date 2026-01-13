@@ -229,6 +229,24 @@
     transform: translateY(0) scale(0.96);
   }
 
+  .modal-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+  }
+  .modal-title-wrap {
+    max-width: calc(100% - 56px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 640px) {
+    .modal-title-wrap {
+      max-width: calc(100% - 72px);
+    }
+  }
+
 /* HEADER tetap seperti punya kamu */
 .site-header{
   position: fixed;
@@ -652,7 +670,7 @@
                     <div class="flex flex-col items-center gap-4 text-center">
                         <div class="space-y-2">
                             <p class="text-2xl font-semibold uppercase tracking-[0.3em] text-amber-300 sm:text-4xl md:text-5xl">Portofolio</p>
-                            <p class="text-sm font-semibold text-slate-300 md:text-base">Explore my journey through projects, certifications, and skills.</p>
+                            <p class="text-sm font-semibold text-slate-300 md:text-base">Tentang project dan skill saya.</p>
                         </div>
                         <div class="portofolio-tabs grid w-full grid-cols-3 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
                             <button class="group flex w-full flex-col items-center gap-2 rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-4 text-sm font-semibold text-slate-300 shadow-lg shadow-black/40 transition data-[active=true]:bg-amber-400 data-[active=true]:text-slate-900 data-[active=true]:shadow-xl sm:w-52 md:w-64" data-tab="projects" data-active="true">
@@ -1117,9 +1135,9 @@
 
         <dialog id="certificateModal" class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[28px] border border-white/10 bg-slate-950/95 p-0 shadow-2xl backdrop:bg-black/70 backdrop:backdrop-blur-sm w-[min(90vw,980px)] h-[80vh] overflow-hidden">
             <div class="flex h-full min-h-0 flex-col">
-                <div class="relative px-6 pb-2 pt-5 text-center">
-                    <div class="mx-auto w-full max-w-3xl space-y-2">
-                        <p id="certificateTitle" class="text-lg font-semibold text-white sm:text-xl">Certificate</p>
+                <div class="relative pl-6 pr-14 pb-2 pt-5 text-center sm:pl-6 sm:pr-16">
+                    <div class="modal-title-wrap mx-auto w-full max-w-3xl space-y-2">
+                        <p id="certificateTitle" class="modal-title text-lg font-semibold text-white sm:text-xl">Certificate</p>
                         <div class="flex flex-wrap items-center justify-center gap-2">
                             <span class="rounded-full border border-amber-300/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-200">Certificate</span>
                             <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-200">Preview</span>
@@ -1151,9 +1169,9 @@
         </dialog>
         <dialog id="projectModal" class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[28px] border border-white/10 bg-slate-950/95 p-0 shadow-2xl backdrop:bg-black/70 backdrop:backdrop-blur-sm w-[min(92vw,920px)] h-[90vh] md:h-[96vh] overflow-hidden">
             <div class="flex h-full min-h-0 flex-col">
-                <div class="relative px-3 pb-1 pt-2 text-center sm:px-4 sm:pt-3">
-                    <div class="mx-auto w-full max-w-3xl space-y-2">
-                        <p id="projectTitle" class="text-lg font-semibold text-white sm:text-xl">Project</p>
+                <div class="relative pl-3 pr-14 pb-1 pt-2 text-center sm:pl-4 sm:pt-3 sm:pr-16">
+                    <div class="modal-title-wrap mx-auto w-full max-w-3xl space-y-2">
+                        <p id="projectTitle" class="modal-title text-lg font-semibold text-white sm:text-xl">Project</p>
                         <p id="projectSubtitle" class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-200">Detail</p>
                     </div>
                     <button id="projectClose" class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border border-amber-300/30 bg-amber-400/10 text-amber-200 transition hover:border-amber-200 hover:bg-amber-400/20 sm:right-6 sm:top-5" aria-label="Close">
