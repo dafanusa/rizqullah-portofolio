@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="google-site-verification" content="tm8vdlC0XAP8dlkjFp7ENswMp_pXU_eqB45O50ak5G0">
-        <title>{{ config('app.name', 'Portofolio Rizqullah Dafa Nusa') }}</title>
+        <title>Portofolio Rizqullah Dafa Nusa</title>
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=bebas-neue:400|manrope:400,500,600,700|playfair-display:500,600,700" rel="stylesheet" />
