@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth overflow-x-hidden">
-    <head>
-        <meta charset="utf-8">
-        <meta name="google-site-verification" content="tm8vdlC0XAP8dlkjFp7ENswMp_pXU_eqB45O50ak5G0">
-        <title>{{ config('app.name', 'Portofolio Rizqullah Dafa Nusa') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="tm8vdlC0XAP8dlkjFp7ENswMp_pXU_eqB45O50ak5G0">
 
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=bebas-neue:400|manrope:400,500,600,700|playfair-display:500,600,700" rel="stylesheet" />
+    <!-- TITLE (JANGAN DINAMIS UNTUK HOME) -->
+    <title>Portfolio Rizqullah Dafa Nusa | Informatics Engineering</title>
+
+    <!-- SEO META -->
+    <meta name="description" content="Portofolio resmi Rizqullah Dafa Nusa, mahasiswa Informatika UMM dengan fokus Web Development, UI/UX, dan aplikasi modern.">
+    <meta name="keywords" content="Rizqullah Dafa Nusa, Dafa Nusa, Portofolio, Developer, Informatika UMM">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portofolio Dafa Nusa">
+    <meta property="og:description" content="Website portofolio resmi Dafa Nusa">
+    <meta property="og:site_name" content="Portfolio Dafa Nusa">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portofolio-dafanusa.vercel.app">
+
+    <!-- Structured Data (INI KUNCI GOOGLE) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Portofolio Dafa Nusa",
+      "alternateName": "Dafa Nusa",
+      "url": "https://portofolio-dafanusa.vercel.app"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=bebas-neue:400|manrope:400,500,600,700|playfair-display:500,600,700" rel="stylesheet" />
 
         <script>
             window.__CERTS_INLINE__ = true;
