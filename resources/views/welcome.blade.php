@@ -13,7 +13,7 @@
             window.__CERTS_INLINE__ = true;
         </script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+
         <style>
   @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -755,11 +755,17 @@
                                     <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Lihat Project" role="button" tabindex="0">
                                     <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
                                     <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Portofolio Kreatif</h3>
-                                        <p class="text-sm text-slate-300">Section highlight, timeline, dan showcase project yang rapi.</p>
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Website Manajemen Arsip ATV Diskominfo Kota Batu</h3>
+                                        <p class="text-sm text-slate-300">Sistem web manajemen aset digital terpadu untuk stasiun televisi lokal ATV Diskominfo Kota Batu. Mengintegrasikan pencatatan riwayat penyiaran, kategorisasi arsip liputan, dan pelaporan terpusat guna mempermudah aksesibilitas serta akuntabilitas data publik.</p>
                                     </div>
                                 </article>
-
+                                  <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="project" data-portfolio-item="project" data-detail-title="Portofolio Kreatif" data-detail-desc="Section highlight, timeline, dan showcase project yang rapi." data-detail-image="{{ asset('assets/portofolio/project-2.jpg') }}" data-detail-link="#" data-detail-link-label="Lihat Project" role="button" tabindex="0">
+                                    <img class="h-48 w-full rounded-2xl border border-white/5 object-cover transition duration-500 group-hover:scale-[1.02] sm:h-52" src="{{ asset('assets/portofolio/project-2.jpg') }}" alt="Project portofolio" loading="lazy" decoding="async" />
+                                    <div class="space-y-2">
+                                        <h3 class="text-xl font-semibold text-amber-300 font-['Playfair_Display',_ui-serif,_Georgia,_serif]">Aplikasi Streaming ATV Diskominfo Kota Batu</h3>
+                                        <p class="text-sm text-slate-300">Aplikasi streaming untuk menampilkan konten televisi lokal ATV Diskominfo Kota Batu. Dengan antarmuka yang ramah pengguna dan fitur pencarian yang efisien, aplikasi ini memungkinkan masyarakat untuk menikmati konten televisi secara online.</p>
+                                    </div>
+                                </article>
                                 <!-- DESIGN (pemisah kode) -->
 
                                 <article class="group grid cursor-pointer gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-lg shadow-black/40 transition hover:-translate-y-2 hover:shadow-2xl" data-category="design" data-portfolio-item="design" data-detail-title="Poster Aplikasi MVBT Activity Manager" data-detail-desc="" data-detail-image="{{ asset('assets/design/postermobile.png') }}" data-detail-link="#" data-detail-link-label="Lihat Design" role="button" tabindex="0">
@@ -812,7 +818,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="flex justify-center">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                            <div class="flex justify-center">
                                 <button class="portfolio-show-more hidden rounded-full border border-white/10 bg-white/5 px-6 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 transition hover:bg-white/10" data-portfolio-show="filtered">Show more</button>
                                 <button class="portfolio-show-less hidden rounded-full border border-white/10 bg-white/5 px-6 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 transition hover:bg-white/10" data-portfolio-hide="filtered">Show less</button>
                             </div>
@@ -1203,11 +1209,11 @@
                 </div>
             </div>
         </dialog>
-    
-        
-        
+
+
+
         <script>
-            
+
             const revealTargets = document.querySelectorAll('.reveal-on-scroll');
             if (revealTargets.length) {
                 const observer = new IntersectionObserver((entries) => {
